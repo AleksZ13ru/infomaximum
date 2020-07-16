@@ -1,0 +1,42 @@
+.Button {
+    text-align: center;
+    color: #333333;
+    background: #FFCE0C;
+    width: 95px;
+    height: 36px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.Button:focus {
+    color: #333333;
+    background: #FFCE0C;
+    border: none;
+    outline: 0 !important;
+}
+
+.Button:hover {
+    color: #333333;
+    background: #FFD73B;
+    border: none;
+}
+
+
+.Button:active {
+    color: #333333;
+    background: #FFC40C;
+    border: none;
+}
+
+.Button:disabled {
+    color: #333333;
+    background: #FFCE0C;
+    opacity: 0.5;
+    border: none;
+}
