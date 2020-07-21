@@ -1,5 +1,6 @@
-import React from "react";
+import React, {Fragment} from "react";
 import './Dashboard.css';
+import {gql, useQuery} from '@apollo/client';
 // import PropTypes from "prop-types";
 // import {Col, Container, Row} from "react-grid-system";
 // import Button from "../../components/Button/Button";
@@ -12,15 +13,46 @@ import './Dashboard.css';
 // import Clock from "../../components/Icon/Clock.svg";
 import ListItem from "./components/ListItem";
 
+const GET_PROCESS_LIST = gql`
+    query processList{
+        processList{
+            id
+            name
+            numberOfExecutions
+            averageLeadTime
+            averageActiveTime
+            employeesInvolvedProcess
+            numberOfScenarios
+            start
+            end
+            loading
+
+        }
+    }
+`;
+
 export default function Dashboard() {
-    return(
+    const {loading, error, data} = useQuery(GET_PROCESS_LIST);
+
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+
+    return (
         <div>
-            <ListItem/>
-            <ListItem/>
-            <ListItem/>
-            <ListItem/>
-            <ListItem/>
-            <ListItem/>
+            {data.processList.map((el) => (
+                <Fragment key={el.id}>
+                    <ListItem  element={el}/>
+                </Fragment>
+
+                )
+            )}
+            {/*{ console.log(data)}*/}
+            {/* <ListItem/>*/}
+            {/* <ListItem/>*/}
+            {/* <ListItem/>*/}
+            {/* <ListItem/>*/}
+            {/* <ListItem/>*/}
+            {/* <ListItem/>*/}
         </div>
     )
 }

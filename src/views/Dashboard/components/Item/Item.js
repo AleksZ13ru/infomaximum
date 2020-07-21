@@ -20,7 +20,7 @@ export default function Item(props) {
 }
 
 Item.propTypes = {
-    icon: PropTypes.object,
+    icon: PropTypes.any,
     text: PropTypes.string,
     subtext: PropTypes.string,
 };
