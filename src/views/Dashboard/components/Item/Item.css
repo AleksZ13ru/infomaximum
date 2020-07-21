@@ -1,0 +1,43 @@
+.demo-problem, .demo-solution {
+    font-size: 1em;
+}
+
+.text {
+    margin:4px;
+    /*padding-left: 16px;*/
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #535374;
+}
+.text span{
+    padding-left: 12px;
+}
+
+.subtext {
+    margin-left:40px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    /*padding-left: 32px;*/
+    /*display: inline;*/
+    /*align-items: start;*/
+    /*text-align: left;*/
+    color: #999999;
+}
+
+.text img {
+    color: #535374;
+    opacity: 0.5;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
+}
+

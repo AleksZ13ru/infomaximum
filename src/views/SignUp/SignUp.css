@@ -1,0 +1,29 @@
+/*.signInWrapper {*/
+/*    !*display: grid;*!*/
+/*    margin: 0;*/
+/*    !*background: gray;*!*/
+/*    !*background: linear-gradient(to top, #fefcea, #f1da36);*!*/
+/*    height: 100vh;*/
+/*    background: linear-gradient(213.6deg, #6879BB 2.47%, #9300BB 95.42%);*/
+/*}*/
+
+.logo{
+    /*background: #EE4141;*/
+
+    width: 152px;
+    height: 32px;
+    margin: 0 auto 0;
+    padding-top: 32px;
+    padding-bottom: 80px;
+}
+
+.form{
+    background: #FFFFFF;
+    margin: 0 auto 0;
+    padding: 16px;
+    width: 24em;
+    height: 80vh;
+    border-radius: 2px;
+    /*padding-bottom: 0;*/
+
+}

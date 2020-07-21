@@ -1,0 +1,8 @@
+.FullPureWrapper {
+    /*display: grid;*/
+    margin: 0;
+    /*background: gray;*/
+    /*background: linear-gradient(to top, #fefcea, #f1da36);*/
+    height: 100vh;
+    background: linear-gradient(213.6deg, #6879BB 2.47%, #9300BB 95.42%);
+}

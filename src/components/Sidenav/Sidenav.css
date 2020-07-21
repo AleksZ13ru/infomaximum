@@ -1,0 +1,61 @@
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 224px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #404064; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidebar {
+    background-color: #404064;
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*position: relative;*/
+}
+
+.sidebar:focus {
+    color: #333333;
+    background: #404064;
+    border: none;
+    outline: 0 !important;
+}
+
+.sidebar:hover {
+    color: #333333;
+    background: #404064;
+    border: none;
+}
+
+.sidebar:active {
+    color: #333333;
+    background: #FFC40C;
+    border: none;
+}
+
+.sidebar button {
+    overflow: hidden;
+    border: none;
+    background-color: #404064;
+    padding: 14px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: left;
+    min-width: 100%;
+}
+
+.sidebar button img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.sidebar button span {
+    vertical-align: middle;
+}

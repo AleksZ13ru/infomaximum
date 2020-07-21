@@ -1,8 +1,13 @@
+.wrapper {
+    display: grid;
+    margin: 8px;
+}
+
 .Button {
     text-align: center;
     color: #333333;
     background: #FFCE0C;
-    width: 95px;
+    width: auto;
     height: 36px;
     font-family: Open Sans, serif;
     font-style: normal;

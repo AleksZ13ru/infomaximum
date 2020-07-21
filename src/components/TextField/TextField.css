@@ -1,0 +1,92 @@
+.wrapper {
+    display: grid;
+    margin: 8px;
+}
+
+.TextField {
+    display: flex;
+    width: 100%;
+    margin-bottom: 4px;
+    border: 1px solid #D6DCE9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.TextField:hover {
+    border: 1px solid #415FD5;
+}
+
+.Text {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    text-align: left;
+    vertical-align: center;
+    /*padding-left: 8px;*/
+    color: #6879BB;
+    height: 36px;
+    /*width: 90%;*/
+    /*padding-right: 24px;*/
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+}
+
+.Text::placeholder {
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #CCCCCC;
+}
+
+.Text:focus {
+    /*border: 1px solid #415FD5;;*/
+    outline: 0 !important;
+}
+
+.Text:hover {
+    /*border: 1px solid #415FD5;*/
+    /*background: #FFD73B;*/
+    /*border: none;*/
+}
+
+
+/*.TextField:active {*/
+/*    color: #333333;*/
+/*    background: #FFC40C;*/
+/*    border: none;*/
+/*}*/
+
+.Text:disabled{
+    color: #333333;
+    border: none;
+    background: #F5F5F5;
+    opacity: 0.5;
+}
+
+.helperText{
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #EE4141;
+    /*margin-bottom: 12px;*/
+}
+
+.Icon{
+    width: 32px;
+    padding: 8px;
+    /*background: dodgerblue;*/
+    /*color: white;*/
+    min-width: 32px;
+    text-align: center;
+}
