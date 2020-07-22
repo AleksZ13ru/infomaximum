@@ -13,11 +13,11 @@ export default function Account() {
     return (
         <div style={{margin: '18px'}}>
             <Container>
-                <Row>
-                    <Col sm={10} className={"titleName"}>
+                <Row justify="between">
+                    <Col className={"titleName"}>
                         <h2>Борис Годунов.Редактирование</h2>
                     </Col>
-                    <Col sm={2} className={"buttonSave"}>
+                    <Col xs="content" className={"buttonSave"}>
                         <Button text={"Сохранить"}/>
                     </Col>
                 </Row>

@@ -58,11 +58,12 @@
 }
 
 .buttonSave{
-    width: 32px;
+    width: 116px;
     padding: 8px;
+    /*height: 112px;*/
     /*background: dodgerblue;*/
     /*color: white;*/
-    min-width: 32px;
+    min-width: 36px;
     text-align: center;
 }
 

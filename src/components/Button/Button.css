@@ -3,7 +3,7 @@
     margin: 8px;
 }
 
-.Button {
+.button {
     text-align: center;
     color: #333333;
     background: #FFCE0C;
@@ -19,27 +19,27 @@
     border: none;
 }
 
-.Button:focus {
+.button:focus {
     color: #333333;
     background: #FFCE0C;
     border: none;
     outline: 0 !important;
 }
 
-.Button:hover {
+.button:hover {
     color: #333333;
     background: #FFD73B;
     border: none;
 }
 
 
-.Button:active {
+.button:active {
     color: #333333;
     background: #FFC40C;
     border: none;
 }
 
-.Button:disabled {
+.button:disabled {
     color: #333333;
     background: #FFCE0C;
     opacity: 0.5;

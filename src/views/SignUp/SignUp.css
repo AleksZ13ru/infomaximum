@@ -1,15 +1,4 @@
-/*.signInWrapper {*/
-/*    !*display: grid;*!*/
-/*    margin: 0;*/
-/*    !*background: gray;*!*/
-/*    !*background: linear-gradient(to top, #fefcea, #f1da36);*!*/
-/*    height: 100vh;*/
-/*    background: linear-gradient(213.6deg, #6879BB 2.47%, #9300BB 95.42%);*/
-/*}*/
-
-.logo{
-    /*background: #EE4141;*/
-
+.logoSignUp{
     width: 152px;
     height: 32px;
     margin: 0 auto 0;
@@ -17,13 +6,23 @@
     padding-bottom: 80px;
 }
 
-.form{
+.formSignUp{
     background: #FFFFFF;
     margin: 0 auto 0;
     padding: 16px;
     width: 24em;
-    height: 80vh;
+    height: 88vh;
     border-radius: 2px;
-    /*padding-bottom: 0;*/
+}
 
+div.formSignUp span{
+    margin-left: 8px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #404064;
 }

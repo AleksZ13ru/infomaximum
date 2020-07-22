@@ -59,3 +59,7 @@
 .sidebar button span {
     vertical-align: middle;
 }
+
+.sidebar button:hover {
+    outline: 0 !important;
+}

@@ -51,9 +51,9 @@ export default function SignIn() {
 
     const handleSubmit = () => {
         SetErrorServer(false);
-        // setEmailError(!validate(email));
-        // setPasswordError(password.length === 0);
-        // if (emailError || passwordError) return;
+        setEmailError(!validate(email));
+        setPasswordError(password.length === 0);
+        if (!validate(email) || password.length === 0) return;
 
         login({
             variables: {
@@ -65,22 +65,26 @@ export default function SignIn() {
 
     return (
         <Fragment>
-            <div className="logo">
+            <div className="logoFormIn">
                 <img
                     src={logo}
                     // className="App-logo"
                     alt="logo"/>
             </div>
-            <div className="form">
+            <div className="formSignIn">
                 <TextField value={email} placeholder={"Электронная почта"}
-                           onChange={(event) => setEmail(event.target.value)}/>
+                           onChange={(event) => setEmail(event.target.value)}
+                           error={emailError}
+                />
                 <TextField value={password} placeholder={"Пароль"} type="password"
-                           onChange={(event) => setPassword(event.target.value)}/>
+                           onChange={(event) => setPassword(event.target.value)}
+                           error={passwordError}
+                />
                 <Button type="submit" text={"Войти в систему"} onClick={handleSubmit}/>
                 <a style={{margin: "8px"}} href="/sign-up">Зарегистрироваться</a>
 
                 {errorServer &&
-                <div className="error">
+                <div className="errorServer">
                     <div className="mess">
                         <img className={"btn-img"} alt={"menu"} src={Danger}/>
                         <span>Сообщение об ошибке!</span>

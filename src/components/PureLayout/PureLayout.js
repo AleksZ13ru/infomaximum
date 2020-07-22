@@ -8,7 +8,7 @@ export default function PureLayout(props) {
     const {children} = props;
     // const [openSidebar, setOpenSidebar] = React.useState(false);
     return (
-        <div className="FullPureWrapper">
+        <div className="fullPureWrapper">
             {children}
         </div>
     )

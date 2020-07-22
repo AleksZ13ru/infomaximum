@@ -20,6 +20,5 @@ export default function MainLayout(props) {
 }
 
 MainLayout.propTypes = {
-    // title: PropTypes.string,
     children: PropTypes.node
 };

@@ -2,54 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fb50466-a520-4857-80f0-2676edef5bc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.graphqlconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schema.graphql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PureLayout/PureLayout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PureLayout/PureLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PureLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RouteWithLayout/RouteWithLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RouteWithLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidenav/Sidenav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidenav/Sidenav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sidenav/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextField/Icon/EyeClose.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextField/Icon/EyeOpen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextField/Icon/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextField/TextField.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextField/TextField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextField/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopBar/TopBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopBar/TopBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopBar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Account/Account.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Account/Account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Account/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard/Dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard/components/ListItem/ListItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard/components/ListItem/ListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard/components/ListItem/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Dashboard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignIn/SignIn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignIn/SignIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignIn/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUp/SignUp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUp/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUp/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/MainLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PureLayout/PureLayout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PureLayout/PureLayout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PureLayout/PureLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PureLayout/PureLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidenav/Sidenav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidenav/Sidenav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextField/TextField.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextField/TextField.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextField/TextField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextField/TextField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopBar/TopBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar/TopBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Account/Account.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Account/Account.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Account/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Account/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Dashboard/components/ListItem/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Dashboard/components/ListItem/ListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignIn/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignIn/SignIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignIn/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignIn/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUp/SignUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUp/SignUp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUp/SignUp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +110,8 @@
       <workItem from="1594998005321" duration="17611000" />
       <workItem from="1595180457377" duration="9968000" />
       <workItem from="1595345512256" duration="8922000" />
+      <workItem from="1595419134749" duration="181000" />
+      <workItem from="1595421092466" duration="7997000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1594908108877</created>
@@ -166,26 +139,34 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1337" y="28" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594908107348" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1595419289350">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595419289350" />
     <state x="-1092" y="414" width="264" height="262" key="Github.ShareDialog" timestamp="1594908246385">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1092" y="414" width="264" height="262" key="Github.ShareDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594908246385" />
-    <state width="1442" height="329" key="GridCell.Tab.0.bottom" timestamp="1595197322787">
-      <screen x="0" y="0" width="1463" height="874" />
+    <state width="1515" height="185" key="GridCell.Tab.0.bottom" timestamp="1595419315556">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1442" height="329" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1595197322787" />
-    <state width="1442" height="329" key="GridCell.Tab.0.center" timestamp="1595197322787">
-      <screen x="0" y="0" width="1463" height="874" />
+    <state width="1515" height="185" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595419315556" />
+    <state width="1515" height="185" key="GridCell.Tab.0.center" timestamp="1595419315556">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1442" height="329" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1595197322787" />
-    <state width="1442" height="329" key="GridCell.Tab.0.left" timestamp="1595197322787">
-      <screen x="0" y="0" width="1463" height="874" />
+    <state width="1515" height="185" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595419315556" />
+    <state width="1515" height="185" key="GridCell.Tab.0.left" timestamp="1595419315556">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1442" height="329" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1595197322787" />
-    <state width="1442" height="329" key="GridCell.Tab.0.right" timestamp="1595197322787">
-      <screen x="0" y="0" width="1463" height="874" />
+    <state width="1515" height="185" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595419315556" />
+    <state width="1515" height="185" key="GridCell.Tab.0.right" timestamp="1595419315556">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1442" height="329" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1595197322787" />
+    <state width="1515" height="185" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595419315556" />
     <state x="241" y="80" key="SettingsEditor" timestamp="1594998073970">
       <screen x="0" y="0" width="1463" height="874" />
     </state>
@@ -194,5 +175,9 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="234" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1594908124605" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1595422638294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1595422638294" />
   </component>
 </project>

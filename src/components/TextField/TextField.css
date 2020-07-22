@@ -3,7 +3,7 @@
     margin: 8px;
 }
 
-.TextField {
+.textField {
     display: flex;
     width: 100%;
     margin-bottom: 4px;
@@ -12,21 +12,21 @@
     box-sizing: border-box;
 }
 
-.TextField:hover {
+.textField.er{
+    border: 1px solid #EE4141
+}
+
+.textField:hover {
     border: 1px solid #415FD5;
 }
 
-.Text {
+input.text {
     width: 100%;
     padding: 10px;
     outline: none;
     text-align: left;
-    vertical-align: center;
-    /*padding-left: 8px;*/
     color: #6879BB;
     height: 36px;
-    /*width: 90%;*/
-    /*padding-right: 24px;*/
     font-family: Open Sans, serif;
     font-style: normal;
     font-size: 14px;
@@ -34,9 +34,13 @@
     background: #FFFFFF;
     border: none;
     border-radius: 4px;
+    font-weight: normal;
+
+    display: flex;
+    align-items: center;
 }
 
-.Text::placeholder {
+input.text::placeholder {
     font-family: Open Sans, serif;
     font-style: normal;
     font-weight: normal;
@@ -45,12 +49,12 @@
     color: #CCCCCC;
 }
 
-.Text:focus {
+input.text {
     /*border: 1px solid #415FD5;;*/
     outline: 0 !important;
 }
 
-.Text:hover {
+input.text:hover {
     /*border: 1px solid #415FD5;*/
     /*background: #FFD73B;*/
     /*border: none;*/
@@ -63,7 +67,7 @@
 /*    border: none;*/
 /*}*/
 
-.Text:disabled{
+input.text:disabled{
     color: #333333;
     border: none;
     background: #F5F5F5;
@@ -79,14 +83,12 @@
     display: flex;
     align-items: center;
     color: #EE4141;
-    /*margin-bottom: 12px;*/
 }
 
-.Icon{
+.icon{
     width: 32px;
     padding: 8px;
-    /*background: dodgerblue;*/
-    /*color: white;*/
+    margin: auto;
     min-width: 32px;
-    text-align: center;
 }
+
