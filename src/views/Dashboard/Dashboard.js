@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
-import './Dashboard.css';
-import {gql, useQuery} from '@apollo/client';
+import "./Dashboard.css";
+import {gql, useQuery} from "@apollo/client";
 // import PropTypes from "prop-types";
 // import {Col, Container, Row} from "react-grid-system";
 // import Button from "../../components/Button/Button";

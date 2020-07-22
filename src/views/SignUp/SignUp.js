@@ -4,8 +4,17 @@ import logo from "../../logo1.svg";
 import TextField from "../../components/TextField/TextField";
 import Button from "../../components/Button/Button";
 import './SignUp.css';
+import {gql, useMutation} from '@apollo/client';
+import {AUTH_TOKEN} from "../../constants";
+import {useHistory} from "react-router-dom";
 
+const SIGNUP_MUTATION = gql`
+    mutation signUp($firstName: String! , $secondName: String!, $email: String!, $password: String!){
+        signup(firstName:$firstName, secondName:$secondName, email:$email, password:$password)
+    }
+`
 export default function SignUp() {
+    let history = useHistory();
     const [firstName, setFirstName] = React.useState('');
     const [secondName, setSecondName] = React.useState('');
     const [email, setEmail] = React.useState('');
@@ -15,26 +24,45 @@ export default function SignUp() {
     const [secondNameError, setSecondNameError] = React.useState(false);
     const [emailError, setEmailError] = React.useState(false);
     const [passwordError, setPasswordError] = React.useState(false);
+    const [signup, {data, loading, error}] = useMutation(SIGNUP_MUTATION, {onCompleted, onError});
+    const [errorServer, SetErrorServer] = React.useState(false);
 
     function validate(email) {
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         return reg.test(email);
     }
 
+    const _saveUserData = token => {
+        localStorage.setItem(AUTH_TOKEN, token)
+    };
+
+    function onCompleted(data) {
+        console.log(data.signup);
+        _saveUserData(data.signup);
+        history.push('/');
+    }
+
+    function onError() {
+        SetErrorServer(true)
+    }
     const handleSubmit = () => {
         // SetErrorServer(false);
         setFirstNameError(firstName.length === 0);
         setSecondNameError(secondName.length === 0);
         setEmailError(!validate(email));
         setPasswordError(password.length === 0 || password!==passwordTwo);
-        if (!validate(email) || password.length === 0) return;
+        // if (!validate(email) || password.length === 0) return;
+        if (firstName.length === 0 || secondName.length === 0 || !validate(email) || password.length === 0) return;
 
-        // login({
-        //     variables: {
-        //         email: email,
-        //         password: password
-        //     },
-        // }).then()
+
+        signup({
+            variables: {
+                firstName: firstName,
+                secondName: secondName,
+                email: email,
+                password: password
+            },
+        }).then()
     };
 
     return (
