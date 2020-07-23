@@ -8,6 +8,8 @@ import Danger from "../../components/Icon/Danger.svg";
 import {gql, useMutation} from '@apollo/client';
 import {AUTH_TOKEN} from '../../constants'
 import {useHistory} from "react-router-dom";
+import {Field, reduxForm} from 'redux-form';
+import ContactForm from './ContactForm'
 
 const LOGIN_MUTTION = gql`
     mutation Login($email: String!, $password: String!) {
@@ -17,7 +19,7 @@ const LOGIN_MUTTION = gql`
     }
 `;
 
-export default function SignIn() {
+export default function SignIn(props) {
     // const [addTodo, { data }] = useMutation(ADD_TODO);
     let history = useHistory();
     const [email, setEmail] = React.useState("admin@admin.ru");
@@ -63,46 +65,71 @@ export default function SignIn() {
         }).then()
     };
 
+    // const {handleSubmit} = props;
+    const submit  = (values) => {
+        alert(values);
+        console.log(values);
+    };
+
     return (
-        <Fragment>
-            <div className="logoFormIn">
-                <img
-                    src={logo}
-                    // className="App-logo"
-                    alt="logo"/>
-            </div>
-            <div className="formSignIn">
-                <TextField value={email} placeholder={"Электронная почта"}
-                           onChange={(event) => setEmail(event.target.value)}
-                           error={emailError}
-                />
-                <TextField value={password} placeholder={"Пароль"} type="password"
-                           onChange={(event) => setPassword(event.target.value)}
-                           error={passwordError}
-                />
-                <Button type="submit" text={"Войти в систему"} onClick={handleSubmit}/>
-                <a style={{margin: "8px"}} href="/sign-up">Зарегистрироваться</a>
+        // <Fragment>
+        //     <div className="logoFormIn">
+        //         <img
+        //             src={logo}
+        //             // className="App-logo"
+        //             alt="logo"/>
+        //     </div>
+        //     <div className="formSignIn">
+        //         <TextField value={email} placeholder={"Электронная почта"}
+        //                    onChange={(event) => setEmail(event.target.value)}
+        //                    error={emailError}
+        //         />
+        //         <TextField value={password} placeholder={"Пароль"} type="password"
+        //                    onChange={(event) => setPassword(event.target.value)}
+        //                    error={passwordError}
+        //         />
+        //         <Button type="submit" text={"Войти в систему"} onClick={handleSubmit}/>
+        //         <a style={{margin: "8px"}} href="/sign-up">Зарегистрироваться</a>
+        //
+        //         {errorServer &&
+        //         <div className="errorServer">
+        //             <div className="mess">
+        //                 <img className={"btn-img"} alt={"menu"} src={Danger}/>
+        //                 <span>Сообщение об ошибке!</span>
+        //             </div>
+        //         </div>}
+        //     </div>
+        //
+        // </Fragment>
+        <form onSubmit={event => {
+            event.preventDefault();
+            login({
+                variables: {
+                    email: "admin@admin.ru",
+                    password: "123456"
+                },
+            }).then()
+        }}>
+            <Field
+                name="email"
+                component="input"
+                type="text"
+                placeholder="Username"
+            />
+            <Field
+                name="password"
+                component="input"
+                type="password"
+                placeholder="Password"
+            />
+            <button type="submit" label="submit">Войти в систему</button>
+        </form>
 
-                {errorServer &&
-                <div className="errorServer">
-                    <div className="mess">
-                        <img className={"btn-img"} alt={"menu"} src={Danger}/>
-                        <span>Сообщение об ошибке!</span>
-                    </div>
-                </div>}
-            </div>
-
-        </Fragment>
-
-        // <div>
-        //     <form action="">
-        //         <TextField value={name} onChange={(event)=>setName(event.target.value)}/>
-        //         <TextField type="password"  value={pass} onChange={(event)=>setPass(event.target.value)}/>
-        //         <Button type="submit" text={"Войти в систему"} onClick={()=>console.log(name+ ' '+ pass)}/>
-        //     </form>
-        // </div>
     );
 
 }
 
-SignIn.propTypes = {};
+// SignIn.propTypes = {};
+SignIn = reduxForm ({
+    form: 'login',
+}) (SignIn);
