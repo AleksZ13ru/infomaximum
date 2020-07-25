@@ -1,4 +1,4 @@
-.logoSignUp{
+.logoFormIn {
     width: 152px;
     height: 32px;
     margin: 0 auto 0;
@@ -6,7 +6,7 @@
     padding-bottom: 80px;
 }
 
-.formSignUp{
+.formSignUp {
     background: #FFFFFF;
     margin: 0 auto 0;
     padding: 16px;
@@ -15,14 +15,27 @@
     border-radius: 2px;
 }
 
-div.formSignUp span{
-    margin-left: 8px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
-    color: #404064;
+.errorServer {
+    background: #FFE9DB;
+    margin: 100px -16px 0;
+    padding: 0;
+    width: 24em;
+    height: auto;
+    border-radius: 2px;
+}
+
+.errorServer div.mess {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.errorServer img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.errorServer span {
+    vertical-align: middle;
 }

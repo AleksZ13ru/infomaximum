@@ -11,19 +11,11 @@ export default function TopBar(props) {
                 <img className={"btn-img"} alt={"menu"} src={Menu}/>
                 <span>Меню</span>
             </button>
-            {/*<button onClick={onClick}><img alt={"menu"} src={Menu}/>Меню</button>*/}
         </div>
     )
 }
 
 TopBar.propTypes = {
-    // type: PropTypes.string,
-    // value: PropTypes.string,
-    // error: PropTypes.bool,
-    // disabled: PropTypes.bool,
-    // label: PropTypes.string,
-    // placeholder: PropTypes.string,
-    // helperText: PropTypes.string,
     onClick: PropTypes.func
 };
 

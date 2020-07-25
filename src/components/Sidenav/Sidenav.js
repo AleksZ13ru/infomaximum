@@ -48,14 +48,6 @@ export default function Sidenav(props) {
 Sidenav.propTypes = {
     open: PropTypes.bool,
     onClose: PropTypes.func
-    // type: PropTypes.string,
-    // value: PropTypes.string,
-    // error: PropTypes.bool,
-    // disabled: PropTypes.bool,
-    // label: PropTypes.string,
-    // placeholder: PropTypes.string,
-    // helperText: PropTypes.string,
-
 };
 
 Sidenav.defaultProps = {

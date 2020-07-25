@@ -1,59 +1,45 @@
 import React from "react";
 import PropTypes from "prop-types";
 import './TextField.css';
-import EyeOpened from './Icon/svg/EyeOpened.svg'
 import Icon from "./Icon";
 
 export default function TextField(props) {
-    const {type, value, disabled, label, error, helperText, onClick, placeholder, onChange} = props;
+    const {input, label, type, meta:{ touched, error} } = props;
     const [passShow, setPassShow] = React.useState(false);
     let className = "textField";
-    let errorText = "Произошла ошибка";
-    if (error) {
+    if (touched && error) {
         className+=" er";
-        if (value==='') {
-            errorText +=". Поле должно быть заполнено"
-        }
     }
 
-
     return (
-        <div className="wrapper">
-            <div>{label}</div>
+        <div className="textFieldWrapper">
             <div className={className}>
                 <input
+                    {...input}
                     className="text"
                     type={passShow ? "text" : type}
-                    disabled={disabled}
-                    placeholder={placeholder}
-                    value={value}
-                    onChange={onChange}
+                    placeholder={label}
                 />
                 {type === "password" &&
-                <display className="icon"  onClick={() => {
+                <div className="icon"  onClick={() => {
                     setPassShow(!passShow)
 
                 }}>
                     <Icon name={passShow ? "eyeOpen" : "eyeClose"}/>
-                </display>}
+                </div>}
             </div>
-            <div className="helperText">{error && errorText}</div>
+            {touched && ((error && <div className="helperText">{error}</div>))}
         </div>
     )
 }
 
 TextField.propTypes = {
-    type: PropTypes.string,
-    value: PropTypes.string,
-    error: PropTypes.bool,
-    disabled: PropTypes.bool,
+    input: PropTypes.any,
     label: PropTypes.string,
-    placeholder: PropTypes.string,
-    helperText: PropTypes.string,
-    onChange: PropTypes.func
+    type: PropTypes.string
 };
 
 TextField.defaultProps = {
     type: "text",
-    placeholder: "Не задано"
+    label: "Не задано"
 };

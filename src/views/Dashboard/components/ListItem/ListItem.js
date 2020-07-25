@@ -53,7 +53,7 @@ export default function ListItem(props) {
                 <Row style={{minHeight: '192px'}}>
                     <Col sm={2} md={2} style={{marginTop: "auto", marginBottom: "auto"}}>
                         <Row justify="center">
-                            <Item icon={Reload} text={element.numberOfExecutions} subtext={"выполнено раз"}/>
+                            <Item icon={Reload} text={`${element.numberOfExecutions}`} subtext={"выполнено раз"}/>
                         </Row>
                     </Col>
                     <Col sm={3} md={3} style={{marginTop: "24px", marginBottom: "auto"}}>

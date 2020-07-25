@@ -16,7 +16,10 @@
     "react-dom": "^16.13.1",
     "react-grid-system": "^7.0.3",
     "react-router-dom": "latest",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "redux-form": "^8.3.6",
+    "redux": "latest",
+    "react-redux": "latest"
   },
   "devDependencies": {
     "apollo-client": "^2.6.10",

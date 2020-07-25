@@ -1,21 +1,18 @@
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 224px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 224px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
     left: 0;
-    background-color: #404064; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 0px; /* Place content 60px from the top */
-    transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: #404064;
+    overflow-x: hidden;
+    padding-top: 0;
+    transition: 0.1s;
 }
 
 .sidebar {
     background-color: #404064;
-    /*min-width: 100%;*/
-    /*min-height: 100%;*/
-    /*position: relative;*/
 }
 
 .sidebar:focus {

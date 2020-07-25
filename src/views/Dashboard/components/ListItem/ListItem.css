@@ -1,38 +1,31 @@
-/* Ensure proper sizing */
 * {
     box-sizing: border-box;
 }
 
-/* Column container */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
-    flex: 30%; /* Set the width of the sidebar */
-    background-color: #f1f1f1; /* Grey background color */
-    padding: 20px; /* Some padding */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
 }
 
-/* Main column */
 .main {
-    flex: 100%; /* Set the width of the main content */
-    background-color: white; /* White background color */
+    flex: 100%;
+    background-color: white;
     height: 100%;
-    padding: 20px; /* Some padding */
+    padding: 20px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
     .row {
         flex-direction: column;
     }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
     .navbar a {
         float: none;
@@ -41,9 +34,9 @@
 }
 
 .footer {
-    padding: 8px; /* Some padding */
-    text-align: center; /* Center text*/
-    background: #ddd; /* Grey background */
+    padding: 8px;
+    text-align: center;
+    background: #ddd;
 }
 
 .paper {
@@ -57,11 +50,9 @@
     margin-top: 12px;
 }
 
-.buttonSave{
+.buttonSave {
     width: 32px;
     padding: 8px;
-    /*background: dodgerblue;*/
-    /*color: white;*/
     min-width: 32px;
     text-align: center;
 }
@@ -74,11 +65,10 @@ h3 {
     line-height: 19px;
     display: flex;
     align-items: center;
-
     color: #999999;
 }
 
-.titleName span{
+.titleName span {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -86,17 +76,15 @@ h3 {
     line-height: 30px;
     display: flex;
     align-items: center;
-
     color: #6879BB;
 }
 
-.buttonDetails a{
+.buttonDetails a {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
-    /*display: flex;*/
     align-items: center;
     text-decoration: none;
     opacity: 0.5;
@@ -104,31 +92,25 @@ h3 {
 }
 
 
-.dates span.sub{
+.dates span.sub {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    /*display: flex;*/
-    /*align-items: center;*/
-
     color: #999999;
 }
 
-.dates span.dat{
+.dates span.dat {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    /*display: flex;*/
-    /*align-items: center;*/
-
     color: #333333;
 }
 
-/* Solid border */
+
 hr.solid {
     margin-left: -15px;
     margin-right: 9px;
