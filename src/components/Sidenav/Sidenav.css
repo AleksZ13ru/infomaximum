@@ -24,21 +24,16 @@
 
 .sidebar:hover {
     color: #333333;
-    background: #404064;
+    background: #EE4141;
     border: none;
 }
 
-.sidebar:active {
-    color: #333333;
-    background: #FFC40C;
-    border: none;
-}
 
 .sidebar button {
     overflow: hidden;
     border: none;
     background-color: #404064;
-    padding: 14px 28px;
+    padding: 14px 16px;
     font-size: 14px;
     cursor: pointer;
     display: inline-block;
@@ -50,13 +45,29 @@
 }
 
 .sidebar button img {
-    margin-right: 5px;
+    margin-right: 6px;
     vertical-align: middle;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 .sidebar button span {
     vertical-align: middle;
 }
 
 .sidebar button:hover {
+    background-color: #535374;
     outline: 0 !important;
+}
+
+hr.sidebarTop {
+    margin-top: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 1px solid #6879BB;
+}
+
+hr.sidebar {
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 1px solid #6879BB;
 }

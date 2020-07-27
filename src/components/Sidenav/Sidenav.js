@@ -4,6 +4,7 @@ import './Sidenav.css';
 import Menu from "../Icon/Menu.svg";
 import User from "../Icon/User.svg";
 import Pie from "../Icon/Pie.svg";
+import Exit from "../Icon/Exit.svg";
 import {Link} from "react-router-dom";
 import {AUTH_TOKEN} from "../../constants";
 import {useHistory} from "react-router-dom";
@@ -20,6 +21,7 @@ export default function Sidenav(props) {
                     <span>Proceset</span>
                 </button>
             </div>
+            <hr className="sidebarTop"/>
             <div className="sidebar" onClick={onClose}>
                 <Link to="/account">
                     <button>
@@ -37,6 +39,7 @@ export default function Sidenav(props) {
                     </button>
                 </Link>
             </div>
+            <hr className="sidebar"/>
             <div className="sidebar" onClick={onClose}>
                 {authToken ? (
                     <Link to="#" onClick={() => {
@@ -44,14 +47,14 @@ export default function Sidenav(props) {
                         history.push(`/`)
                     }}>
                         <button>
-                            <img className={"btn-img"} alt={"menu"} src={Pie}/>
+                            <img className={"btn-img"} alt={"menu"} src={Exit}/>
                             <span>Выйти</span>
                         </button>
                     </Link>
                 ) : (
                     <Link to="/sign-in" >
                         <button>
-                            <img className={"btn-img"} alt={"menu"} src={Pie}/>
+                            <img className={"btn-img"} alt={"menu"} src={Exit}/>
                             <span>Войти</span>
                         </button>
                     </Link>
