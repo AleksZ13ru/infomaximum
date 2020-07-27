@@ -14,7 +14,7 @@ function FormSignUp(props) {
             <Field name="email" component={TextField} type="email" label="Электронная почта"/>
             <Field name="password" component={TextField} type="password" label="Введите пароль"/>
             <Field name="passwordTwo" component={TextField} type="password" label="Повторите пароль"/>
-            <Button type="submit" text={"Войти в систему"} disabled={false}/>
+            <Button type="submit" text={"Применить и войти"} disabled={false}/>
             <p style={{margin: "8px"}}>Уже зарегистрированы? <a href="/sign-in">Войти</a></p>
         </form>
     )

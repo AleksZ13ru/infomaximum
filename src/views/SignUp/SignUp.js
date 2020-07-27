@@ -24,7 +24,8 @@ function SignUp() {
 
     function onCompleted(data) {
         // console.log(data);
-        _saveUserData(data.signup);
+        // _saveUserData(data.signup);
+        localStorage.setItem(AUTH_TOKEN, data.signup);
         history.push('/');
     }
 

@@ -26,7 +26,8 @@ function SignIn() {
 
     function onCompleted(data) {
         // console.log(data);
-        _saveUserData(data.login.token);
+        // _saveUserData(data.login.token);
+        localStorage.setItem(AUTH_TOKEN, data.login.token);
         history.push('/');
     }
 
